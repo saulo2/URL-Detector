@@ -77,7 +77,6 @@
           </execution>
         </executions>
       </plugin>
-      <!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
@@ -89,10 +88,12 @@
             <goals>
               <goal>sign</goal>
             </goals>
+            <configuration>
+              <keyname>contact@sauloaraujo.com</keyname>
+            </configuration>            
           </execution>
         </executions>
       </plugin>
-      -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-deploy-plugin</artifactId>
@@ -144,5 +145,12 @@
       <organization>LinkedIn</organization>
       <organizationUrl>http://www.linkedin.com</organizationUrl>
     </developer>
+    <developer>
+	  <id>saulo</id>
+      <name>Saulo Araujo</name>
+      <email>contact@sauloaraujo.com</email>
+      <organization>sauloaraujo.com</organization>
+      <organizationUrl>http://sauloaraujo.com</organizationUrl>
+    </developer>    
   </developers>
 </project>
